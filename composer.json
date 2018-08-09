@@ -1,0 +1,31 @@
+{
+    "name": "emtiazzahid/grameenphone-sms-gateway",
+    "description": "Grameenphone sms gateway",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Emtiaz Zahid",
+            "email": "emtiazzahid@gmail.com"
+        }
+    ],
+    "autoload": {
+            "psr-4": {
+                "Emtiaz\\GrameenphoneSmsGateway\\": "src/"
+            }
+        },
+    "require": {
+        "nahid/apiz": "^1.1"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emtiaz\\GrameenphoneSmsGateway\\Providers\\GrameenphoneSmsGatewayServiceProvider"
+            ],
+            "aliases": {
+                "Grameenphone": "Emtiaz\\GrameenphoneSmsGateway\\Facades\\Grameenphone"
+            }
+        }
+    }
+}
